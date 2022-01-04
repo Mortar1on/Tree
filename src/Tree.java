@@ -4,12 +4,12 @@ import java.util.List;
 public class Tree {
 
     public static void main(String[] args) {
-        Node root = new Node("Корень");
+        Node root = new Node("Root");
 
-        Node level1 = new Node("Уровень-1");
-        Node level2 = new Node("Уровень-2");
-        Node level1a = new Node("Уровень-1a");
-        Node level1b = new Node("Уровень-1b");
+        Node level1 = new Node("Level-1");
+        Node level2 = new Node("Level-2");
+        Node level1a = new Node("Level-1a");
+        Node level1b = new Node("Level-1b");
         Node level3 = new Node("Level-3");
 
         Node some = new Node("insert child");
@@ -20,17 +20,14 @@ public class Tree {
         level1.add(level2);
         level2.add(level3);
 
-        System.out.println("Исходное состояние:\n\n");
+        System.out.println("The initial state:\n");
 
         root.print(0);
 
-//        root.insert(some, "Корень");
-
-        root.insert(some, "Уровень-1");
+        root.insert(some, "Level-1");
         root.insert(some, "Level-3");
-        root.insert(some, "Уровень-1a");
 
-        System.out.println("\n\nПосле вставки довеска:\n\n");
+        System.out.println("\nAfter inserting a branch:\n");
         root.print(0);
 
     }
