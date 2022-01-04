@@ -25,10 +25,10 @@ public class Tree {
         root.print(0);
 
 //        root.insert(some, "Корень");
-//        root.insert(some, "Уровень-2");
+
         root.insert(some, "Уровень-1");
         root.insert(some, "Level-3");
-//        root.insert(some, "Уровень-1a");
+        root.insert(some, "Уровень-1a");
 
         System.out.println("\n\nПосле вставки довеска:\n\n");
         root.print(0);
